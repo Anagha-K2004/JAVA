@@ -1,0 +1,71 @@
+1st program
+public class student
+{
+    int id;
+    String name;
+    float mark;
+
+    void get(int id1, String n, float m)
+    {
+        id = id1;
+        name = n;
+        mark = m;
+    }
+
+    void show()
+    {
+        System.out.println("my id is " + id);
+        System.out.println("my name is " + name);
+        System.out.println("my mark is " + mark);
+    }
+}
+
+class demo
+{
+    public static void main(String args[])
+    {
+        student s1 = new student();
+        s1.get(1, "Anu", 21);
+        s1.show();
+    }
+}
+
+2nd program
+class Product
+{
+    int id;
+    String name;
+    float price;
+
+    void get(int id1, String n, float p)
+    {
+        id = id1;
+        name = n;
+        price = p;
+    }
+
+    void show()
+    {
+        System.out.println("product id is " + id);
+        System.out.println("Product name is " + name);
+        System.out.println("Price is " + price);
+    }
+
+
+    public static void main(String args[])
+    {
+        Product p1 = new Product();
+        p1.get(1, "Pen", 4.0f);
+        p1.show();
+    
+    
+        Product p2 = new Product();
+        p2.get(1, "Book", 32.0f);
+        p2.show();
+    
+    
+        Product p3 = new Product();
+        p3.get(1, "Scale", 10.0f);
+        p3.show();
+    }
+}
